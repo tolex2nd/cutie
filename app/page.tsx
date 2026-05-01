@@ -18,24 +18,27 @@ function TargetLogo({ className }: { className?: string }) {
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] flex flex-col items-center px-4 py-8">
-      {/* Online Users Badge */}
-      <div className="flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-gray-100 mb-6">
-        <Users className="w-4 h-4 text-red-500" />
-        <span className="flex items-center gap-1.5 text-sm font-medium text-gray-800">
-          <span className="w-2 h-2 bg-green-500 rounded-full" />
-          999+ online
-        </span>
-      </div>
-
       {/* Target Logo */}
       <TargetLogo className="w-16 h-16 mb-6" />
 
       {/* Main Card */}
       <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md w-full text-center">
-        {/* Exclusive Offer Badge */}
-        <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 rounded-full px-4 py-1.5 mb-6">
-          <span className="w-2 h-2 bg-red-500 rounded-full" />
-          <span className="text-sm font-medium">Exclusive Offer</span>
+        {/* Top Row: Online Badge (left) + Exclusive Offer (center) */}
+        <div className="flex items-center justify-between mb-6">
+          {/* Online Users Badge */}
+          <div className="flex items-center gap-1.5 bg-gray-100 rounded-full px-2.5 py-1 border border-gray-200">
+            <Users className="w-3 h-3 text-red-500" />
+            <span className="flex items-center gap-1 text-xs font-medium text-gray-700">
+              <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+              999+ online
+            </span>
+          </div>
+          
+          {/* Exclusive Offer Badge */}
+          <div className="flex items-center gap-1.5 bg-red-50 text-red-600 rounded-full px-3 py-1">
+            <span className="w-1.5 h-1.5 bg-red-500 rounded-full" />
+            <span className="text-xs font-medium">Exclusive Offer</span>
+          </div>
         </div>
 
         {/* Heading */}
