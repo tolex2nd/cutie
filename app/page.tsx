@@ -44,12 +44,29 @@ export default function Home() {
         </h1>
 
         {/* Description */}
-        <p className="text-gray-700 mb-2">
-          Complete a short survey to unlock your reward.
+        <p className="text-gray-500 text-sm mb-6">
+          Users who complete all steps qualify for this limited $750 gift card opportunity.
         </p>
-        <p className="text-gray-500 text-sm mb-8">
-          Selected users may qualify for this limited $750 Target Gift Card opportunity.
-        </p>
+
+        {/* Steps */}
+        <div className="text-left mb-8 space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-semibold">1</span>
+            <p className="text-gray-700 text-sm">{"Click on \"Get Started\" below."}</p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-semibold">2</span>
+            <p className="text-gray-700 text-sm">Enter your email and basic information.</p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-semibold">3</span>
+            <p className="text-gray-700 text-sm">Complete 4-5+ recommended deals.</p>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-semibold">4</span>
+            <p className="text-gray-700 text-sm">Claim reward through email.</p>
+          </div>
+        </div>
 
         {/* CTA Button */}
         <a
