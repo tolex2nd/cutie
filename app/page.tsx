@@ -52,10 +52,15 @@ export default function Home() {
         </p>
 
         {/* CTA Button */}
-        <button className="w-full bg-gradient-to-b from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg shadow-red-500/30 transition-all duration-200 flex items-center justify-center gap-2 group">
+        <a
+          href="https://linkthem.net/aff_c?offer_id=250&aff_id=177750"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full bg-gradient-to-b from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg shadow-red-500/30 transition-all duration-200 flex items-center justify-center gap-2 group"
+        >
           Get Started
           <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
-        </button>
+        </a>
       </div>
 
       {/* Footer */}
